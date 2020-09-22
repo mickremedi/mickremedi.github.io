@@ -1,0 +1,75 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #1a535c;
+}
+
+.navbar-light {
+    margin: 10px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #1a535c;
+}
+
+#hello {
+    font-size: 40px;
+}
+
+#bubbles {
+    width: inherit;
+}
+
+section {
+    height: 52vw;
+    max-height: 510px;
+    max-width: 980px;
+}
+
+.block {
+    height: 55vw;
+    width: 53vw;
+    max-width: 520px;
+    max-height: 540px;
+    border-radius: 2vh;
+    box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
+}
+
+.software {
+    background: #4ecdc4;
+    z-index: 3;
+}
+
+.math {
+    background: #23bee0;
+    z-index: 2;
+}
+.cooking {
+    background: #6fcf97;
+    z-index: 1;
+}
+
+.left {
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.right {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+#dots {
+    height: 20vw;
+    max-height: 200px;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
