@@ -29,7 +29,7 @@ body {
 
 /* Introduction */
 
-#hello {
+#hello span {
     font-size: 40px;
 }
 
@@ -63,6 +63,7 @@ section {
     color: #f7fff7;
     text-align: center;
     padding-bottom: 20px;
+    font-size: 4vw;
 }
 
 .block img {
@@ -96,14 +97,16 @@ section {
     right: 20px;
 }
 
-section .btn {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
+.lead {
+    font-size: 2vw;
+}
+
+section .btn-block {
     font-size: 20px;
     color: #f7fff7;
 }
 
-section .btn:hover {
+section .btn-block:hover {
     color: #f7fff7;
     opacity: 0.8;
 }
@@ -127,4 +130,35 @@ section .btn:hover {
 #dots {
     height: 20vw;
     max-height: 200px;
+    padding-top: 50px;
+}
+
+#dots img {
+    width: inherit;
+}
+
+/* Connect */
+
+#connect {
+    height: 32vw;
+    max-height: 320px;
+}
+
+#connect p {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+#connect img {
+    width: 40px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+}
+
+#social_media .btn {
+    display: block;
+    text-align: left;
+    padding: 15px 0;
+    font-size: 20px;
 }
