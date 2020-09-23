@@ -38,16 +38,16 @@ section {
     box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
 }
 
-.software {
+#software .block {
     background: #4ecdc4;
     z-index: 3;
 }
 
-.math {
+#math .block {
     background: #23bee0;
     z-index: 2;
 }
-.cooking {
+#cooking .block {
     background: #6fcf97;
     z-index: 1;
 }
@@ -72,4 +72,30 @@ section {
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+section .btn {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #f7fff7;
+}
+
+#software .btn {
+    background: #4ecdc4;
+    z-index: 3;
+}
+
+#math .btn {
+    background: #23bee0;
+    z-index: 2;
+}
+#cooking .btn {
+    background: #6fcf97;
+    z-index: 1;
+}
+
+section .btn:hover {
+    color: #f7fff7;
+    opacity: 0.8;
 }
