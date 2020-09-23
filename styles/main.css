@@ -1,0 +1,148 @@
+/* General */
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #1a535c;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Navbar */
+.navbar-light {
+  margin: 10px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  color: #1a535c;
+}
+
+.navbar-light .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* Introduction */
+#introduction span {
+  font-size: 2.5rem;
+}
+
+#introduction #bubbles {
+  width: inherit;
+}
+
+/* Sections */
+section {
+  height: 52vw;
+  max-height: 510px;
+  max-width: 980px;
+}
+
+.block {
+  position: absolute;
+  height: 55vw;
+  width: 53vw;
+  max-width: 520px;
+  max-height: 540px;
+  top: 0;
+  border-radius: 2vh;
+  -webkit-box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
+}
+
+.block h1 {
+  color: #f7fff7;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.block img {
+  width: 30vw;
+  max-width: 300px;
+}
+
+.block.left {
+  left: 20px;
+}
+
+.block.right {
+  right: 20px;
+}
+
+#software .block,
+#software .btn {
+  background: #4ecdc4;
+  z-index: 3;
+}
+
+#math .block,
+#math .btn {
+  background: #23bee0;
+  z-index: 2;
+}
+
+#cooking .block,
+#cooking .btn {
+  background: #6fcf97;
+  z-index: 1;
+}
+
+section .btn-block {
+  font-size: 1.25rem;
+  color: #f7fff7;
+}
+
+section .btn-block:hover {
+  color: #f7fff7;
+  opacity: 0.8;
+}
+
+/* Separator */
+#dots {
+  height: 20vw;
+  max-height: 200px;
+  padding-top: 50px;
+}
+
+#dots img {
+  width: inherit;
+}
+
+/* Connect */
+#connect {
+  height: 32vw;
+  max-height: 320px;
+}
+
+#connect p {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+#connect img {
+  width: 40px;
+  padding-bottom: 6px;
+  padding-right: 6px;
+}
+
+#connect .btn {
+  display: block;
+  text-align: left;
+  padding: 15px 0;
+  font-size: 1.25rem;
+}
+/*# sourceMappingURL=main.css.map */

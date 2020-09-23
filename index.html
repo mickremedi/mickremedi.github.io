@@ -8,7 +8,7 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
     <title>Michael Remediakis | Software Engineer
     </title>
 </head>
@@ -18,8 +18,10 @@
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
             <a href="/" class="navbar-brand">Michael Remediakis</a>
-
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="">Resume</a>
@@ -38,30 +40,30 @@
         </div>
     </nav>
 
-    <section id="hello" class="mx-auto d-flex">
+    <section id="introduction" class="mx-auto d-flex">
         <div class="row justify-content-md-center align-items-center">
-            <div class="col-5 pl-5">
+            <div class="col-md-5 order-2 order-md-1 pl-5">
                 <span>
                     Hi. 
                     <br>
                     I'm Michael.
                 </span>
             </div>
-            <div class="col-6">
-                <img src="bubbles.png" id="bubbles" alt="Responsive image">
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="images/bubbles.png" id="bubbles" alt="Responsive image">
             </div>
         </div>
     </section>
 
     <section id="software" class="mt-5 mx-auto" style="z-index:4;">
 		<div class="row h-100">
-			<div class="col-6">
+			<div class="col-md-6">
 				<div class="block left d-flex flex-column justify-content-center align-items-center">
                     <h1>Software Developer</h1>
-                    <img src="coding.png" alt="Responsive image">
+                    <img src="images/coding.png" alt="Responsive image">
                 </div>
 			</div>
-			<div class="col-6 d-flex pl-4 pr-2">
+			<div class="col-md-6 d-flex pl-4 pr-2">
 				<div class="row justify-content-center align-self-center">
 					<div class="col-10">
 						<p class="lead">Sed sagittis elit sed nulla vestibulum auctor. 
@@ -78,7 +80,7 @@
 
     <section id="math" class="mx-auto">
 		<div class="row h-100">
-            <div class="col-6 d-flex pl-2 pr-4 pt-4">
+            <div class="col-md-6 d-flex pl-2 pr-4 pt-4">
                 <div class="row justify-content-center align-self-center">
                     <div class="col-10">
                         <p class="lead">Nulla dignissim pharetra purus quis aliquam. 
@@ -89,10 +91,10 @@
                         </div>
                     </div>
                 </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="block right d-flex flex-column justify-content-center align-items-center">
                     <h1>Math Nerd</h1>
-                    <img src="pi.png" alt="Responsive image">
+                    <img src="images/pi.png" alt="Responsive image">
                 </div>
             </div>
 		</div>
@@ -100,13 +102,13 @@
 
     <section id="cooking" class="mx-auto">
 		<div class="row h-100">
-			<div class="col-6">
+			<div class="col-md-6">
 				<div class="block left d-flex flex-column justify-content-center align-items-center">
                     <h1>Unprofessional Chef</h1>
-                    <img src="salad.png" alt="Responsive image">
+                    <img src="images/salad.png" alt="Responsive image">
                 </div>
 			</div>
-			<div class="col-6 d-flex pl-4 pr-2 pt-5">
+			<div class="col-md-6 d-flex pl-4 pr-2 pt-5">
 				<div class="row justify-content-center align-self-center">
 					<div class="col-10">
 						<p class="lead">Phasellus vel volutpat ipsum. Nulla facilisi. 
@@ -123,7 +125,7 @@
     <section id="dots" class="mx-auto">
         <div class="row justify-content-md-center align-items-center h-100">
             <div class="col-3 mx-auto">
-                <img src="dots.png" alt="Responsive image">
+                <img src="images/dots.png" alt="Responsive image">
             </div>
         </div>
     </section>
@@ -134,9 +136,9 @@
                 Let's Connect!
             </p>
             <div id="social_media" class="col-4">
-                <a href="https://www.linkedin.com/in/mickremedi/" class="btn"><img src="linkedin.png" alt="Responsive image"> LinkedIn</a>
-                <a href="https://github.com/mickremedi" class="btn"><img src="github.png" alt="Responsive image"> GitHub</a>
-                <a href="https://www.facebook.com/mickremedi/" class="btn"><img src="facebook.png" alt="Responsive image"> Facebook</a>
+                <a href="https://www.linkedin.com/in/mickremedi/" class="btn"><img src="images/linkedin.png" alt="Responsive image"> LinkedIn</a>
+                <a href="https://github.com/mickremedi" class="btn"><img src="images/github.png" alt="Responsive image"> GitHub</a>
+                <a href="https://www.facebook.com/mickremedi/" class="btn"><img src="images/facebook.png" alt="Responsive image"> Facebook</a>
             </div>
         </div>
     </section>
