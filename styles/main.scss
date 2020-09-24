@@ -1,3 +1,5 @@
+@import "../scss/bootstrap";
+
 $main_text: #1a535c;
 $negative_text: #f7fff7;
 $software: #4ecdc4;
@@ -15,6 +17,19 @@ body {
 .row {
     margin-left: 0;
     margin-right: 0;
+}
+
+section {
+    height: 52vw;
+    max-height: 510px;
+    max-width: 980px;
+}
+
+@include media-breakpoint-down(sm) {
+    section {
+        height: 500px;
+        max-height: 500px;
+    }
 }
 
 /* Navbar */
@@ -54,15 +69,24 @@ body {
     }
 }
 
-/* Sections */
+@include media-breakpoint-down(sm) {
+    #introduction {
+        height: 200px;
+        margin-bottom: 20px;
 
-section {
-    height: 52vw;
-    max-height: 510px;
-    max-width: 980px;
+        span {
+            font-size: 1.5rem;
+        }
+    }
 }
 
+/* Sections */
+
 .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     height: 55vw;
     width: 53vw;
@@ -75,7 +99,6 @@ section {
     h1 {
         color: $negative_text;
         text-align: center;
-        padding-bottom: 20px;
         font-size: 2.5rem;
     }
 
@@ -90,6 +113,69 @@ section {
 
     &.right {
         right: 20px;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .btn {
+        font-size: 1.25rem;
+        color: $negative_text;
+
+        &:hover {
+            color: $negative_text;
+            opacity: 0.8;
+        }
+    }
+
+    &.left {
+        padding-right: 7vw;
+        padding-left: 3vw;
+    }
+
+    &.right {
+        padding-left: 7vw;
+        padding-right: 3vw;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .block {
+        flex-direction: row;
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+
+        &.left,
+        &.right {
+            left: 0;
+            right: 0;
+        }
+
+        h1 {
+            width: 200px;
+            font-size: 1.7rem;
+            margin: 0;
+        }
+
+        img {
+            width: 70px;
+            margin-left: 10px;
+        }
+    }
+
+    .description {
+        &.left {
+            padding: 0 40px;
+        }
+
+        &.right {
+            padding: 0 40px;
+        }
     }
 }
 
@@ -116,32 +202,37 @@ section {
     }
 }
 
-section .btn-block {
-    font-size: 1.25rem;
-    color: $negative_text;
-
-    &:hover {
-        color: $negative_text;
-        opacity: 0.8;
-    }
-}
-
 /* Separator */
 
 #dots {
     height: 20vw;
     max-height: 200px;
-    padding-top: 50px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
 
     img {
-        width: inherit;
+        width: 250px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #dots {
+        padding-top: 0;
+        height: 60px;
+        margin-bottom: 10px;
+
+        img {
+            width: 100px;
+        }
     }
 }
 
 /* Connect */
 
 #connect {
-    height: 32vw;
+    justify-content: center;
+    align-items: center;
     max-height: 320px;
 
     p {
@@ -161,5 +252,20 @@ section .btn-block {
         text-align: left;
         padding: 15px 0;
         font-size: 1.25rem;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #connect {
+        max-height: 300px;
+
+        p {
+            font-size: 2rem;
+        }
+
+        .btn {
+            text-align: center;
+        }
+        padding-bottom: 20px;
     }
 }
