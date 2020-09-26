@@ -276,16 +276,22 @@ section {
 }
 
 // Projects
-
 .titlebox {
     text-align: center;
     margin: auto;
-    width: 150px;
     margin-top: 65px;
     margin-bottom: 75px;
     color: $main_text;
     font-size: 2.5rem;
     border-bottom: 3px solid #1a535c;
+}
+
+#projectTitle {
+    width: 150px;
+}
+
+#contactTitle {
+    width: 225px;
 }
 
 #projectGrid {
@@ -300,6 +306,11 @@ section {
 .project {
     height: 350px;
     max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: $negative_text;
 }
 
 #projectGrid .lineBreak {
@@ -309,12 +320,34 @@ section {
     border-bottom: 1px solid #1a535c;
 }
 
+#comingSoon {
+    text-align: center;
+    font-size: 4rem;
+}
+
 @include media-breakpoint-down(xs) {
     .titlebox {
         font-size: 2rem;
         margin-top: 20px;
         margin-bottom: 0px;
-        width: 125px;
         border-bottom: 3px solid #1a535c;
+    }
+
+    #projectTitle {
+        width: 125px;
+    }
+
+    #contactTitle {
+        width: 180px;
+    }
+
+    .project {
+        font-size: 2rem;
+    }
+
+    #comingSoon {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 20px;
     }
 }

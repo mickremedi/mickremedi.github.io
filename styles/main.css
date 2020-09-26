@@ -11075,12 +11075,19 @@ section {
 .titlebox {
   text-align: center;
   margin: auto;
-  width: 150px;
   margin-top: 65px;
   margin-bottom: 75px;
   color: #1a535c;
   font-size: 2.5rem;
   border-bottom: 3px solid #1a535c;
+}
+
+#projectTitle {
+  width: 150px;
+}
+
+#contactTitle {
+  width: 225px;
 }
 
 #projectGrid {
@@ -11095,6 +11102,17 @@ section {
 .project {
   height: 350px;
   max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3rem;
+  color: #f7fff7;
 }
 
 #projectGrid .lineBreak {
@@ -11104,13 +11122,31 @@ section {
   border-bottom: 1px solid #1a535c;
 }
 
+#comingSoon {
+  text-align: center;
+  font-size: 4rem;
+}
+
 @media (max-width: 575.98px) {
   .titlebox {
     font-size: 2rem;
     margin-top: 20px;
     margin-bottom: 0px;
-    width: 125px;
     border-bottom: 3px solid #1a535c;
+  }
+  #projectTitle {
+    width: 125px;
+  }
+  #contactTitle {
+    width: 180px;
+  }
+  .project {
+    font-size: 2rem;
+  }
+  #comingSoon {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
