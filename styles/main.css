@@ -10819,8 +10819,8 @@ section {
 
 @media (max-width: 767.98px) {
   section {
-    height: 500px;
-    max-height: 500px;
+    height: 100%;
+    max-height: 100%;
   }
 }
 
@@ -10888,9 +10888,9 @@ section {
   max-width: 520px;
   max-height: 540px;
   top: 0;
-  border-radius: 2vh;
-  -webkit-box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 1vh 0.2vh rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .block h1 {
@@ -10900,6 +10900,7 @@ section {
 }
 
 .block img {
+  margin-top: 20px;
   width: 30vw;
   max-width: 300px;
 }
@@ -10932,7 +10933,6 @@ section {
 
 .description .btn:hover {
   color: #f7fff7;
-  opacity: 0.8;
 }
 
 .description.left {
@@ -10954,7 +10954,7 @@ section {
     position: relative;
     max-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 110px;
   }
   .block.left, .block.right {
     left: 0;
@@ -10966,14 +10966,22 @@ section {
     margin: 0;
   }
   .block img {
+    margin-top: 0;
     width: 70px;
     margin-left: 10px;
+  }
+  .description {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
   .description.left {
     padding: 0 40px;
   }
   .description.right {
     padding: 0 40px;
+  }
+  #cooking .description {
+    margin-bottom: 10px;
   }
 }
 
@@ -11009,14 +11017,13 @@ section {
 }
 
 #dots img {
-  width: 250px;
+  width: 200px;
 }
 
 @media (max-width: 767.98px) {
   #dots {
     padding-top: 0;
-    height: 60px;
-    margin-bottom: 10px;
+    height: 80px;
   }
   #dots img {
     width: 100px;
@@ -11056,13 +11063,54 @@ section {
 @media (max-width: 767.98px) {
   #connect {
     max-height: 300px;
-    padding-bottom: 20px;
   }
   #connect p {
     font-size: 2rem;
   }
   #connect .btn {
     text-align: center;
+  }
+}
+
+.titlebox {
+  text-align: center;
+  margin: auto;
+  width: 150px;
+  margin-top: 65px;
+  margin-bottom: 75px;
+  color: #1a535c;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #1a535c;
+}
+
+#projectGrid {
+  max-width: 980px;
+  margin-top: 50px;
+}
+
+#projectGrid div {
+  margin: 0 20px;
+}
+
+.project {
+  height: 350px;
+  max-height: 100%;
+}
+
+#projectGrid .lineBreak {
+  height: 1px;
+  width: 300px;
+  margin: 30px auto;
+  border-bottom: 1px solid #1a535c;
+}
+
+@media (max-width: 575.98px) {
+  .titlebox {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 125px;
+    border-bottom: 3px solid #1a535c;
   }
 }
 /*# sourceMappingURL=main.css.map */
