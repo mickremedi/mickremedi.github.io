@@ -11099,7 +11099,7 @@ section {
   margin: 0 20px;
 }
 
-.project {
+.project .comingSoon {
   height: 350px;
   max-height: 100%;
   display: -webkit-box;
@@ -11112,6 +11112,13 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 3rem;
+  color: #f7fff7;
+}
+
+.project .projectTitle {
+  position: absolute;
+  padding: 20px;
+  font-size: 1.5rem;
   color: #f7fff7;
 }
 
@@ -11140,7 +11147,7 @@ section {
   #contactTitle {
     width: 180px;
   }
-  .project {
+  .project .comingSoon {
     font-size: 2rem;
   }
   #comingSoon {
