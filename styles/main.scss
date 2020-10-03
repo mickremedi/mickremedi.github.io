@@ -322,7 +322,6 @@ section {
     padding: 20px;
     font-size: 1.5rem;
     color: $negative_text;
-    left: 0;
 }
 
 #projectGrid .lineBreak {
@@ -368,5 +367,6 @@ section {
     }
     .project .projectTitle {
         text-align: center;
+        left: 0;
     }
 }

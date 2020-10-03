@@ -11124,7 +11124,6 @@ section {
   padding: 20px;
   font-size: 1.5rem;
   color: #f7fff7;
-  left: 0;
 }
 
 #projectGrid .lineBreak {
@@ -11165,6 +11164,7 @@ section {
   }
   .project .projectTitle {
     text-align: center;
+    left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
