@@ -11082,8 +11082,12 @@ section {
   border-bottom: 3px solid #1a535c;
 }
 
-#projectTitle {
-  width: 150px;
+#currentProjectsTitle {
+  width: 310px;
+}
+
+#pastProjectsTitle {
+  width: 250px;
 }
 
 #contactTitle {
@@ -11141,8 +11145,11 @@ section {
     margin-bottom: 0px;
     border-bottom: 3px solid #1a535c;
   }
-  #projectTitle {
-    width: 125px;
+  #currentProjectsTitle {
+    width: 250px;
+  }
+  #pastProjectsTitle {
+    width: 200px;
   }
   #contactTitle {
     width: 180px;
@@ -11154,6 +11161,9 @@ section {
     text-align: center;
     font-size: 3rem;
     margin-top: 20px;
+  }
+  .project .projectTitle {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
