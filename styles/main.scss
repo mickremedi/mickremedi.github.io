@@ -32,6 +32,11 @@ section {
     }
 }
 
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /* Navbar */
 
 .navbar-light {
@@ -369,4 +374,8 @@ section {
         text-align: center;
         left: 0;
     }
+}
+
+#contactGrid {
+    text-align: center;
 }

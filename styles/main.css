@@ -10824,6 +10824,12 @@ section {
   }
 }
 
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* Navbar */
 .navbar-light {
   margin: 10px;
@@ -11166,5 +11172,9 @@ section {
     text-align: center;
     left: 0;
   }
+}
+
+#contactGrid {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
